@@ -1,6 +1,6 @@
 const form = document.getElementById('form-atividade');
-const imgPositivo = '<img src="./img/positivo-simbolo.jpg" alt="emoji positivo"/>';
-const imgNegativo = '<img src="./img/negativo-simbolo.jpg" alt="emoji negativo"/>';
+const imgPositivo = '<img src="./img/Positivo-simbolo.jpg" alt="emoji positivo"/>';
+const imgNegativo = '<img src="./img/Negativo-simbolo.jpg" alt="emoji negativo"/>';
 const atividades = [];
 const notas = [];
 const spanPositivo= '<span class="resultado Positivo">Positivo</span>';
@@ -47,7 +47,7 @@ function adicionaLinha() {
     function atualizaMediaFinal() {
         const mediaFinal = calculaMediaFinal();
       
-        document.getElementById('media-final-valor').innerHTML = mediaFinal;
+        document.getElementById('media-final-valor').innerHTML = mediaFinal.toFixed(2);
         document.getElementById('media-final-resultado').innerHTML = mediaFinal >= notaMinima ? spanPositivo : spanNegativo;
     }
     
